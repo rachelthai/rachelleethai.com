@@ -8,15 +8,33 @@ section.hero-banner {
   height: 300px;
   width: 300px;
   position: absolute;
-  top: 50%;
+  top: 30%;
+//  background: black;
   left: 50%;
-  background: black;
-  margin-top: -300px;
   margin-left: -150px;
+  &:empty {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
   div.inner-container {
+    div.logo-holder {
+      height: 200px;
+      width: 200px;
+      margin: auto;
+      img {
+        height: 200px;
+        width: 200px;
+      }
+    }
     div.text-holder {
       text-transform: uppercase;
       text-align: center;
+      letter-spacing: 2px;
       span.name {
         font-size: 24px;
       }
@@ -35,6 +53,7 @@ nav.bottom-bar {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 10px;
+  line-height: 22px;
   section.contact-info {
     padding-right: 20px;
     padding-bottom: 20px;

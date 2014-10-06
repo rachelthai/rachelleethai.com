@@ -7,15 +7,32 @@ section.hero-banner {
   height: 300px;
   width: 300px;
   position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -150px;
+}
+section.hero-banner:empty {
   top: 50%;
   left: 50%;
-  background: black;
-  margin-top: -300px;
-  margin-left: -150px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+section.hero-banner div.inner-container div.logo-holder {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+section.hero-banner div.inner-container div.logo-holder img {
+  height: 200px;
+  width: 200px;
 }
 section.hero-banner div.inner-container div.text-holder {
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 2px;
 }
 section.hero-banner div.inner-container div.text-holder span.name {
   font-size: 24px;
@@ -31,6 +48,7 @@ nav.bottom-bar {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 10px;
+  line-height: 22px;
 }
 nav.bottom-bar section.contact-info {
   padding-right: 20px;
