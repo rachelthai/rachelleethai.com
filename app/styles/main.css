@@ -1,0 +1,59 @@
+section.slide-info,
+section.hero-banner div.text-holder,
+section.contact-info {
+  color: white;
+}
+section.hero-banner {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: black;
+  margin-top: -300px;
+  margin-left: -150px;
+}
+section.hero-banner div.inner-container div.text-holder {
+  text-transform: uppercase;
+  text-align: center;
+}
+section.hero-banner div.inner-container div.text-holder span.name {
+  font-size: 24px;
+}
+section.hero-banner div.inner-container div.text-holder span.title {
+  font-size: 12px;
+}
+nav.bottom-bar {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+nav.bottom-bar section.contact-info {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: right;
+}
+nav.bottom-bar section.contact-info a {
+  color: white;
+}
+nav.bottom-bar section.slide-info {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+nav.bottom-bar section.slide-info span.title-date-holder {
+  display: inline-block;
+}
+nav.bottom-bar section.slide-info span.title-date-holder span.title {
+  text-align: left;
+}
+nav.bottom-bar section.slide-info span.title-date-holder span.date {
+  text-align: right;
+}
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}
