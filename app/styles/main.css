@@ -143,5 +143,9 @@ nav.bottom-bar section.slide-info span.title-date-holder span.date {
   }
   nav.bottom-bar section.contact-info {
     font-size: 14px;
+    -webkit-transition: all linear 0.25s;
+    -moz-transition: all linear 0.25s;
+    -ms-transition: all linear 0.25s;
+    -o-transition: all linear 0.25s;
   }
 }

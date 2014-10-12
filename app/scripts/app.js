@@ -38,28 +38,28 @@ angular.module('rachelleethai.comApp', [
                 description: 'Print - Book Design - Research - Sequential Narrative - Photography'
             },
             {
-                image: 'photos/rachelthai-wipsite_images-02.jpg',
-                title: 'Tibercio Vasquez: Hero Villian',
-                date: '2010',
-                description: 'Print - Book Design - Research - Sequential Narrative - Photography'
-            },
-            {
                 image: 'photos/rachelthai-wipsite_images-03.jpg',
                 title: 'Trails of Escape Collage Wallpaper',
                 date: '2011',
                 description: 'Image Creation Fun'
             },
             {
-                image: 'photos/rachelthai-wipsite_images-04.jpg',
+                image: 'photos/rachelthai-wipsite_images-02.jpg',
+                title: 'Tibercio Vasquez: Hero Villian',
+                date: '2010',
+                description: 'Print - Book Design - Research - Sequential Narrative - Photography'
+            },
+            {
+                image: 'photos/rachelthai-wipsite_images-06.jpg',
                 title: 'Trails of Escape Camp Trip Notebooks',
                 date: '2013 - Present',
                 description: 'Notebook Creation and Production - trailsofescape.com'
             },
             {
                 image: 'photos/rachelthai-wipsite_images-05.jpg',
-                title: 'Trails of Escape Camp Trip Notebooks',
-                date: '2013 - Present',
-                description: 'Notebook Creation and Production - trailsofescape.com'
+                title: 'National Park Service Identity Concept',
+                date: '2010',
+                description: 'Brand Identity'
             }
         ];
 
