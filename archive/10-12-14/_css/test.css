@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* CSS Document */
+	
+<body>
+
+<div class="container">
+  <div class="header"><a href="index.htm">RACHEL LEE THAI</a>    <!-- end .header --></div>
+  <div class="sidebar1">
+    <ul class="nav">
+        <div id="CollapsiblePanel1" class="CollapsiblePanel">
+          <div class="CollapsiblePanelTab" tabindex="2">Selected Works</div>
+          <div class="CollapsiblePanelContent">
+          <li><a href="natlpark.htm">NAT'L PARK</a></li>
+          <li><a href="passport.htm">NPS Passport</a></li>
+          <li><a href="steps.htm">Steps</a></li>
+          <li><a href="vasquez.htm">Tiburcio Vasquez</a></li>
+      	  <li><a href="nothingandanything.htm">[ ]</a></li>
+      	  <li><a href="musclemen.htm">I Like to Draw Muscular Men</a></li>
+     	  <li><a href="toe.htm">Trails of Escape Adventure Club</a></li>
+      	  <li><a href="glow.htm">GLOW</a></li>
+      	  <li><a href="chinesemother.htm">How to Please your Chinese Mother-in-Law</a></li>
+          <li><a href="moon.htm">Moon</a></li>
+          <li><a href="ttset.htm">Tt Set</a></li>
+          <a href="prints_photos.htm">Prints and Photography</a>
+          </div>          
+        </div>
+    </ul>
+    <p><a href="about.htm">ABOUT</a><br />
+      Resume(PDF)<br />
+      +1 <span id="gc-number-0" title="Call with Google Voice">909 274 9807</span><br />
+<a href="html://info@rachelthai.com">info@rachelthai.com</a><br />
+<!-- end .sidebar1 --></p>
+  </div>
+  </div>
+  </div>
