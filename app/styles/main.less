@@ -1,19 +1,34 @@
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: black !important;
+}
+
+.transition (@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -ms-transition: @transition;
+  -o-transition: @transition;
+}
+
+.transform(@string) {
+  -webkit-transform: @string;
+  -moz-transform: @string;
+  -ms-transform: @string;
+  -o-transform: @string;
+}
+
 section.hero-banner {
   height: 300px;
   width: 300px;
   position: absolute;
   top: 30%;
-//  background: black;
   left: 50%;
   margin-left: -150px;
+  .transition(top ease-in-out 0.25s);
   &:empty {
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    .transform(translate(-50%, -50%));
   }
   div.inner-container {
     div.logo-holder {
@@ -75,18 +90,67 @@ nav.bottom-bar {
   }
 }
 
-
-body {
-  font-family: 'Montserrat', sans-serif !important;
+.animate-show {
+  opacity: 1;
+  display: block;
+  .transition(all linear 1s);
 }
 
-@media only screen and (min-width : 0px) and (max-width: 990px) {
+.animate-show.ng-hide {
+  opacity: 0;
+  display: none;
+  .transition(all linear 1s);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 989px) {
   section.hero-banner {
-    position: relative;
+    top: 20px;
+    .transition(top ease-in-out 0.25s);
     div.inner-container {
       div.text-holder {
-//        color: green !important;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  section.hero-banner {
+    height: 200px;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    .transition(all ease-in-out 0.25s);
+    &:empty {
+      top: 50%;
+      left: 50%;
+      .transform(translate(-50%, -50%));
+    }
+    div.inner-container {
+      div.logo-holder {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        img {
+          height: 100px;
+          width: 100px;
+        }
+      }
+      div.text-holder {
+        span.name {
+          font-size: 18px
+        }
+      }
+    }
+  }
+
+  nav.bottom-bar {
+    section.slide-info {
+      .transition(all linear 0.25s);
+      display: none !important;
+      opacity: 0 !important;
+    }
+    section.contact-info {
+      font-size: 14px
     }
   }
 }

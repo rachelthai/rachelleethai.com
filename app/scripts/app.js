@@ -1,8 +1,8 @@
 'use strict';
 angular.module('rachelleethai.comApp', [
-    'ngCookies',
+    'ngRoute',
     'ngResource',
-    'ngSanitize'
+    'ngAnimate'
 ])
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider
@@ -69,5 +69,6 @@ angular.module('rachelleethai.comApp', [
 
         imageData.set(data);
 
-        $.backstretch(image);
+        $.backstretch(image, {duration: 0, fade: 500});
+
     });

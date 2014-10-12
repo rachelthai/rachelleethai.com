@@ -1,5 +1,8 @@
+<!--<button ng-click="hide()">Hide</button>-->
+
 <section class="hero-banner">
-    <div class="inner-container">
+    <div class="inner-container animate-show"
+         ng-show="imageInfo">
         <div class="logo-holder">
             <img src="svg/rachelthai_wipsite_logo.svg"
                  alt=""/>
@@ -14,19 +17,21 @@
 
 <nav class="bottom-bar">
     <div class="row">
-        <div class="col-md-6">
-            <section class="slide-info">
+        <div class="col-sm-6">
+            <section class="slide-info animate-show"
+                     ng-show="imageInfo">
                 <span class="title-date-holder">
                     <span class="title">
                         {{imageInfo.title}}
                     </span>
-                    <span class="date">{{imageInfo.date}}</span>
+                    <span class="date"> — {{imageInfo.date}}</span>
                 </span><br>
                 <span>{{imageInfo.description}}</span>
             </section>
         </div>
-        <div class="col-md-6">
-            <section class="contact-info">
+        <div class="col-sm-6">
+            <section class="contact-info animate-show"
+                     ng-show="imageInfo">
                 Say Hello<br>
                 <a href="mailto:rachellee.thai@gmail.com">rachellee.thai@gmail.com</a>
             </section>

@@ -1,3 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: black !important;
+}
 section.hero-banner {
   height: 300px;
   width: 300px;
@@ -5,6 +9,10 @@ section.hero-banner {
   top: 30%;
   left: 50%;
   margin-left: -150px;
+  -webkit-transition: top ease-in-out 0.25s;
+  -moz-transition: top ease-in-out 0.25s;
+  -ms-transition: top ease-in-out 0.25s;
+  -o-transition: top ease-in-out 0.25s;
 }
 section.hero-banner:empty {
   top: 50%;
@@ -13,7 +21,6 @@ section.hero-banner:empty {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 section.hero-banner div.inner-container div.logo-holder {
   height: 200px;
@@ -70,11 +77,71 @@ nav.bottom-bar section.slide-info span.title-date-holder span.title {
 nav.bottom-bar section.slide-info span.title-date-holder span.date {
   text-align: right;
 }
-body {
-  font-family: 'Montserrat', sans-serif !important;
+.animate-show {
+  opacity: 1;
+  display: block;
+  -webkit-transition: all linear 1s;
+  -moz-transition: all linear 1s;
+  -ms-transition: all linear 1s;
+  -o-transition: all linear 1s;
 }
-@media only screen and (min-width: 0px) and (max-width: 990px) {
+.animate-show.ng-hide {
+  opacity: 0;
+  display: none;
+  -webkit-transition: all linear 1s;
+  -moz-transition: all linear 1s;
+  -ms-transition: all linear 1s;
+  -o-transition: all linear 1s;
+}
+@media only screen and (min-width: 0px) and (max-width: 989px) {
   section.hero-banner {
-    position: relative;
+    top: 20px;
+    -webkit-transition: top ease-in-out 0.25s;
+    -moz-transition: top ease-in-out 0.25s;
+    -ms-transition: top ease-in-out 0.25s;
+    -o-transition: top ease-in-out 0.25s;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  section.hero-banner {
+    height: 200px;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    -webkit-transition: all ease-in-out 0.25s;
+    -moz-transition: all ease-in-out 0.25s;
+    -ms-transition: all ease-in-out 0.25s;
+    -o-transition: all ease-in-out 0.25s;
+  }
+  section.hero-banner:empty {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+  section.hero-banner div.inner-container div.logo-holder {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+  section.hero-banner div.inner-container div.logo-holder img {
+    height: 100px;
+    width: 100px;
+  }
+  section.hero-banner div.inner-container div.text-holder span.name {
+    font-size: 18px;
+  }
+  nav.bottom-bar section.slide-info {
+    -webkit-transition: all linear 0.25s;
+    -moz-transition: all linear 0.25s;
+    -ms-transition: all linear 0.25s;
+    -o-transition: all linear 0.25s;
+    display: none !important;
+    opacity: 0 !important;
+  }
+  nav.bottom-bar section.contact-info {
+    font-size: 14px;
   }
 }
