@@ -1,8 +1,3 @@
-section.slide-info,
-section.hero-banner div.text-holder,
-section.contact-info {
-  color: white;
-}
 section.hero-banner {
   height: 300px;
   width: 300px;
@@ -33,6 +28,7 @@ section.hero-banner div.inner-container div.text-holder {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
+  color: white;
 }
 section.hero-banner div.inner-container div.text-holder span.name {
   font-size: 24px;
@@ -54,6 +50,7 @@ nav.bottom-bar section.contact-info {
   padding-right: 20px;
   padding-bottom: 20px;
   text-align: right;
+  color: white;
 }
 nav.bottom-bar section.contact-info a {
   color: white;
@@ -62,6 +59,7 @@ nav.bottom-bar section.slide-info {
   padding-left: 20px;
   padding-bottom: 20px;
   text-align: left;
+  color: white;
 }
 nav.bottom-bar section.slide-info span.title-date-holder {
   display: inline-block;
@@ -74,4 +72,9 @@ nav.bottom-bar section.slide-info span.title-date-holder span.date {
 }
 body {
   font-family: 'Montserrat', sans-serif !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  section.hero-banner {
+    position: relative;
+  }
 }

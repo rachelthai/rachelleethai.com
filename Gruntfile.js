@@ -321,6 +321,7 @@ module.exports = function (grunt) {
             }
         }
     });
+    grunt.registerTask('less', ['less']);
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.registerTask('server', function (target) {
         if (target === 'dist') {
